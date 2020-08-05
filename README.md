@@ -28,3 +28,8 @@ Add support for **sessions** and **cookies**, use them to keep a record of logge
 
 - Write a piece of **global** middleware that ensures a user is logged in when accessing _any_ route prefixed by `/api/users`.
 - Build a React application that implements components to register, login and view a list of users. Gotta keep sharpening your React skills.
+
+
+Postman Documentation link:
+
+https://documenter.getpostman.com/view/11310730/T1LFmpm1

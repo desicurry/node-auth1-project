@@ -5,8 +5,18 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './dev.sqlite3'
-    }
+      filename: './migrations/dev.db3',
+    },
+    useNullAsDefault: true,
+    migration: {
+      directory: "./migrations",
+    },
+
+    pool: {
+      afterCreate: (conn, done) => {
+        conn.run("PRAGMA foreign_keys = on", done);
+      },
+    },
   },
 
   staging: {
